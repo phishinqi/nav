@@ -22,29 +22,6 @@
 
 [https://www.netlify.com/](https://www.netlify.com/)
 
-#### Vercel 推荐(免费)
-
-国内访问速度较慢，建议测试后使用
-
-[https://github.com/apps/vercel](https://github.com/apps/vercel)
-
-#### 关于自有部署
-
-前提服务器必须能访问公网。(内网收益太小，暂时不加入需求，有需要的可以众筹) 也可以将仓库设为私有
-
-将代码拉到服务器 `git clone https://github.com/xjh22222228/nav.git` 还需要安装`Node >= 18`
-
-执行 `npm i && npm run build`
-
-```bash
-# 启动 公网IP:7777, 后台系统配置请求地址填写：公网IP:7777/server
-npm run server
-```
-
-#### 其他
-
-如果您有更好的部署方式，请给我们提 PR
-
 ## 后台
 
 将路由地址修改为 `system` 即可进入，如: https://www.nav3.cn/#/light 修改为 https://www.nav3.cn/#/system
@@ -63,45 +40,3 @@ git push
 # 如果安装了node只需执行
 npm run update
 ```
-
-## 更新日志
-
-[CHANGELOG](https://github.com/xjh22222228/nav/releases)
-
-## 开发构建
-
-NODE: >= v18
-
-```bash
-# 下载
-git clone --depth=1 https://github.com/xjh22222228/nav.git
-
-cd nav
-
-# 安装依赖 NODE: v18
-yarn
-
-# 启动
-yarn start
-
-# 打包
-yarn build
-```
-
-## 建议
-
-如果有任何功能上的建议可通过 [issue](https://github.com/xjh22222228/nav/issues) 发起, Thank you.
-
-## 支持
-
-项目于 2018 年到至今一直坚持维护和开源, 经过 N 次的迭代与优化, 如果项目能帮到您是我的荣幸。
-
-您可以请作者喝杯咖啡，继续战斗下去（请备注 Github 名字）~
-
-<img src="https://cdn.jsdelivr.net/gh/xjh22222228/public@gh-pages/img/32.png" width="600">
-
-<img src="https://cdn.jsdelivr.net/gh/xjh22222228/public@gh-pages/nav/thank.png" width="200" />
-
-## License
-
-[MIT](./LICENSE)
